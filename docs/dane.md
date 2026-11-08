@@ -23,4 +23,4 @@
 
 ## Historia zmian
 
-- **22 listopada 2026** – pierwsza wersja planu pozyskiwania danych.
+- **17.10.2026** – pierwsza wersja planu pozyskiwania danych.
