@@ -74,3 +74,12 @@ Pierwotne pytanie z raportu: jak zróżnicowane są regionalne rynki motoryzacyj
 ## Historia zmian
 
 - **8 listopada 2026** – pierwsza rewizja po EDA (wersja robocza).
+
+## Odtwarzalne uruchomienie preprocessing'u i modeli
+
+```powershell
+python src/preprocessing.py
+python src/modeling.py
+```
+
+Wyniki są zapisane odpowiednio do `data/processed/cepik_model.csv`, `data/processed/preprocessing_audit.json` i `data/processed/model_results.json`. Wszystkie operacje losowe używają `random_state=42`.

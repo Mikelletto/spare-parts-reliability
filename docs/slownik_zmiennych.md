@@ -50,6 +50,19 @@ Te pola są w zapytaniu (`REQUIRED_COLS`), ale nie wchodzą do obliczeń. Nie na
 | `Naped` | object | Uproszczona kategoria napędu z `rodzaj-paliwa`. | `Benzyna`, `Diesel`, `Elektryczny (BEV)`, `Inne`. Brak paliwa trafia do `Inne` (do zmiany – patrz jakość danych). | wyliczona |
 | `woj` | object | Kopia `rejestracja-wojewodztwo` do grupowania. | Te same 16 wartości co województwo rejestracji. | wyliczona |
 
+### Cechy dodane w pipeline'ie Spotkania 4
+
+| Nazwa kolumny | Typ | Hipoteza i uzasadnienie |
+|---|---|---|
+| `Naped` | object | Grupowanie rzadkich i brakujących paliw redukuje kardynalność i pozwala testować, czy typ napędu wiąże się z pochodzeniem pojazdu. |
+| `marka_normalized` | object | 30 najczęstszych marek zachowano osobno; pozostałe zgrupowano jako `INNE`, aby ograniczyć rzadkie kategorie bez utraty popularnych wzorców. |
+| `hub_flotowy` | int | Flaga dla MAZOWIECKIEGO i WIELKOPOLSKIEGO oddziela potencjalne huby flotowe od pozostałych regionów rejestracji. |
+| `wiek_kategoria` | object | Dyskretyzacja wieku testuje nieproporcjonalne różnice pochodzenia między przedziałami 0–1, 2–5, 6–10, 11–20 i 21+ lat. |
+| `pojemnosc_na_mase` | float64 | Iloraz pojemności i masy opisuje konstrukcyjną charakterystykę pojazdu niezależnie od wartości składowych. |
+| `masa_log` | float64 | Logarytm masy ogranicza wpływ asymetrycznego ogona rozkładu i stabilizuje modele liniowe. |
+| `pojemnosc_log` | float64 | Logarytm pojemności ogranicza asymetrię i skale wpływu ekstremalnych silników. |
+| `outlier_3sigma_*` | bool | Flagi pojemności, masy i roku produkcji oznaczają wartości poza granicą 3σ zamiast usuwać potencjalnie prawdziwe pojazdy. |
+
 ### Agregaty regionalne (sekcja 9 notebooka)
 
 | Nazwa kolumny | Typ | Opis | Wartości / jednostka | Źródło |

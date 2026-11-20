@@ -1,0 +1,68 @@
+{
+  "random_state": 42,
+  "validation": "single 80/20 stratified train/test split",
+  "train_rows": 200000,
+  "test_rows": 50000,
+  "models": {
+    "dummy_baseline": {
+      "accuracy": 0.63188,
+      "f1_macro": 0.3872098438610682,
+      "f1_weighted": 0.48934031227786356,
+      "confusion_matrix": [
+        [
+          31594,
+          0
+        ],
+        [
+          18406,
+          0
+        ]
+      ],
+      "labels": [
+        "Import używany",
+        "Krajowy (Nowy)"
+      ],
+      "roc_auc": 0.5
+    },
+    "logistic_regression": {
+      "accuracy": 0.79726,
+      "f1_macro": 0.7884113080035349,
+      "f1_weighted": 0.7998241735340368,
+      "confusion_matrix": [
+        [
+          25044,
+          6550
+        ],
+        [
+          3587,
+          14819
+        ]
+      ],
+      "labels": [
+        "Import używany",
+        "Krajowy (Nowy)"
+      ],
+      "roc_auc": 0.8757185102845553
+    },
+    "random_forest": {
+      "accuracy": 0.8735,
+      "f1_macro": 0.8688066987657203,
+      "f1_weighted": 0.8753516132922805,
+      "confusion_matrix": [
+        [
+          26566,
+          5028
+        ],
+        [
+          1297,
+          17109
+        ]
+      ],
+      "labels": [
+        "Import używany",
+        "Krajowy (Nowy)"
+      ],
+      "roc_auc": 0.9541035469641032
+    }
+  }
+}

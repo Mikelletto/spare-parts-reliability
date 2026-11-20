@@ -50,6 +50,16 @@
 
 ---
 
+## Status po Spotkaniu 4
+
+- [DONE] Duplikaty dokładne usunięte w `src/preprocessing.py`; w bieżącej pełnej próbce odrzucono 244 595 duplikatów.
+- [DONE] Surowy zbiór pozostaje niezmieniony; kod łączy 42 części z `notebooks/data/raw/` i zapisuje wynik do `data/processed/`.
+- [DONE] Samochody osobowe, masa 500–3500 kg, pojemność 50–7000 cm³ i wiek 0–60 lat są filtrowane w kodzie.
+- [DONE] Braki paliwa mapowane są do kategorii `Brak`; brak marki mapowany jest do `BRAK`, a następnie marka jest grupowana do 30 najczęstszych + `INNE`.
+- [DONE] Outliery dla pojemności, masy i roku produkcji są oznaczane flagami `outlier_3sigma_*`, a nie usuwane automatycznie.
+- [DONE] Preprocessing eksportuje losowo deterministyczną próbkę maksymalnie 250 000 rekordów z `random_state=42` dla odtwarzalnego uruchomienia modeli.
+- Otwarte: pełne pobranie z paginacją CEPiK, normalizacja marek, alternatywny próg importu i dane referencyjne GUS.
+
 ## Historia zmian
 
 - **8 listopada 2026** – utworzenie raportu. Zbiór A: problemy z pobierania i braki na podstawie outputu `Untitled23`. Zbiór B: problemy z czyszczeniem i założeniami analitycznymi.
