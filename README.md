@@ -3,7 +3,7 @@ Poniższe uzupełnienie nie zmienia wcześniejszych ustaleń ani wyników. Statu
 
 | Spotkanie | Termin | Produkt | Stan udokumentowania w README |
 |---:|---|---|---|
-| 1 | 11.10.2026 | Plan pozyskania danych | Brak opisu lub linku do planu — uzupełnić, jeśli jest dostępny. |
+| 1 | 11.10.2026 | Plan pozyskania danych | Zawarty w repozytorium. |
 | 2 | 17.10.2026 | Pierwsze surowe dane w repozytorium | README opisuje wyniki EDA, ale nie wskazuje lokalizacji surowych danych ani zakresu pobrania — dodać ścieżkę i źródło. |
 | 3 | 08.11.2026 | Raport EDA | Wstępne ustalenia EDA są opisane w tym README. Jeśli powstał osobny raport, dodać do niego link. |
 | 4 | 15.11.2026 | Czysty dataset i opis pipeline’u | README podaje komendy uruchomienia preprocessingu i ścieżki wyników. Potwierdzić, że pipeline został uruchomiony, a czysty dataset i audyt są dostępne w repozytorium. |
