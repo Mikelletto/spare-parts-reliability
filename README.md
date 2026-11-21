@@ -1,4 +1,4 @@
-**Stan na: 21 listopada 2026 r.**  
+### Stan na: 21 listopada 2026 r.  
 Poniższe uzupełnienie nie zmienia wcześniejszych ustaleń ani wyników. Status produktów, których nie da się potwierdzić na podstawie obecnej treści README, wymaga uzupełnienia przez zespół.
 
 | Spotkanie | Termin | Produkt | Stan udokumentowania w README |
