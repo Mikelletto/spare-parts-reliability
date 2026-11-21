@@ -1,7 +1,20 @@
-# Koncepcja – rewizja po EDA
+**Stan na: 21 listopada 2026 r.**  
+Poniższe uzupełnienie nie zmienia wcześniejszych ustaleń ani wyników. Status produktów, których nie da się potwierdzić na podstawie obecnej treści README, wymaga uzupełnienia przez zespół.
 
-**Data:** 8 listopada 2026
-**Status:** wersja robocza. Wnioski oznaczone *do weryfikacji* wymagają potwierdzenia na pełnym pobraniu danych.
+| Spotkanie | Termin | Produkt | Stan udokumentowania w README |
+|---:|---|---|---|
+| 1 | 11.10.2026 | Plan pozyskania danych | Brak opisu lub linku do planu — uzupełnić, jeśli jest dostępny. |
+| 2 | 17.10.2026 | Pierwsze surowe dane w repozytorium | README opisuje wyniki EDA, ale nie wskazuje lokalizacji surowych danych ani zakresu pobrania — dodać ścieżkę i źródło. |
+| 3 | 08.11.2026 | Raport EDA | Wstępne ustalenia EDA są opisane w tym README. Jeśli powstał osobny raport, dodać do niego link. |
+| 4 | 15.11.2026 | Czysty dataset i opis pipeline’u | README podaje komendy uruchomienia preprocessingu i ścieżki wyników. Potwierdzić, że pipeline został uruchomiony, a czysty dataset i audyt są dostępne w repozytorium. |
+| 5 | 21.11.2026 | Raport midterm | Uzupełnić po spotkaniu: link do raportu, feedback klienta, podjęte decyzje i zadania do wykonania. |
+
+### Do uzupełnienia po spotkaniu 5
+
+- **Najważniejsze uwagi klienta:** do wpisania.
+- **Decyzje dotyczące pytań badawczych, definicji etykiety i rekomendacji:** do wpisania.
+- **Zadania, osoby odpowiedzialne i terminy:** do wpisania.
+- **Link do raportu midterm lub prezentacji:** do dodania.
 
 ## 1. Stan wyjściowy
 
